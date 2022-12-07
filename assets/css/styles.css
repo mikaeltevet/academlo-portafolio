@@ -194,8 +194,7 @@ footer {
 }
 
 .topnav a:hover {
-    background-color: var(--lightgray);
-    color: black;
+    font-weight: 600;
 }
 
 .active {
