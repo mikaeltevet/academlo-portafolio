@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+:root {
+    --darkgray: #020403;
+    --lightgray: #ADADAD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    padding: 1rem;
+    margin: auto;
+}
+
+body {
+    background-color: var(--darkgray);
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {    
+    list-style: none;
+}
+
+.profilepic {
+    border-radius: 50%;
+    max-width: 240px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    padding: 2rem 0 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 2rem 0 0.5rem;
+    color: var(--lightgray);
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 1rem 5rem;
+    color: var(--lightgray);
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem 1.5rem 5rem;
+    position: relative;
+}
+
+.header-img {
+    position: relative;
+    padding: 1rem 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.social {
+    width: 55%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 400px;
+    padding: 1rem 0;
+}
+
+.habilidades-circle {
+    background-color: rgb(35, 25, 25);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+}
+
+.experiencia {
+    gap: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.experiencia p {
+    text-align: start;
+    color: var(--lightgray);
+    margin-top: 0.2rem;
+}
+
+.experiencia span {
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+}
+
+.contacto {
+    width: 75%;
+    display: inline-flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.contacto-circle {
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.contacto p {
+    font-size: 0.75rem;
+    color: var(--lightgray);
+    margin-top: 0.25rem;
+}
+
+.contacto span {
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+}
+
+footer {
+    font-size: 1.25rem;
+    color: var(--lightgray);
+    font-weight: 400;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: var(--darkgray);
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: var(--lightgray);
+    color: black;
+}
+
+.active {
+    background-color: var(--darkgray);
+    color: white;
+}
+
+@media screen and (min-width: 992px) {
+    .topnav a.icon {
+        display: none;
+    }
+
+    .topnav #myLinks {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 2rem 4rem;
+    }
+
+    img {
+        width: 100%;
+        display: inline;
+        gap: 1rem;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 400px;
+        padding: 1rem;
+    }
+
+    .profilepic {
+        border-radius: 50%;
+        max-width: 360px;
+    }
+
+    .habilidades {
+        gap: 1.5rem;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
